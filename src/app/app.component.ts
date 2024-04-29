@@ -1,12 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, DashboardComponent],
   template: `
-    <h1>Welcome to {{title}}!</h1>
+    <app-dashboard></app-dashboard>
 
     <router-outlet />
   `,
@@ -15,3 +17,4 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'dashboard-app';
 }
+
