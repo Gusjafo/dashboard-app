@@ -26,11 +26,11 @@ $dark-theme: mat.define-dark-theme(
     )
   )
 );
+
+// @debug map-get($map: $dark-theme, $key: color);
+
 @include mat.all-component-themes($light-theme);
-// Apply the light theme by default
-.light-theme {
-  @include mat.all-component-themes($light-theme);
-}
+
 
 .dark-theme {
   @include mat.all-component-colors($dark-theme);

@@ -14,7 +14,7 @@ import { CommonModule } from "@angular/common";
 @Component({
   selector: "app-dashboard",
   template: `
-    <div [ngClass]="{ 'dark-theme': isDarkMode, 'light-theme': !isDarkMode}">
+    <div [ngClass]="{ 'dark-theme': isDarkMode, 'light-theme': !isDarkMode }">
       <div class="grid-container">
         <h1 class="mat-h1">
           Dashboard <mat-slide-toggle [(ngModel)]="isDarkMode"></mat-slide-toggle>
